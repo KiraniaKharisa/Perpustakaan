@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg1: rgb(203 213 225);
+    --bg2:  rgb(226 232 240) ;
+    --cardbook: rgb(166, 178, 233);
+    --colorcardborder: #000;
+    --buttonbg: rgb(20 184 166);
+    --bgnav: rgb(181, 188, 198);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: var(--bgnav);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar .link a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar .link a:hover {
+    color: #000;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .link2 a {
+    text-decoration: none;
+    background-color: var(--buttonbg);
+}
+
+.navbar .link2 a:hover {
+    color: #000;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    background-color: var(--bg1);
+    padding: 60px 30px 30px 30px ;
+}
+
+#home .kotak1 {
+    width: 40%;
+}
+#home .kotak2 {
+    width: 60%;
+}
+#home .kotak2 img {
+    width: 100%;
+}
+
+/* ABOUT STYLE */
+
+#about {
+    background-color: var(--bg2);
+    padding: 0 30px ;
+}
+
+#about .container {
+    flex-direction: row-reverse;
+}
+
+#about h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#about .kotak1 {
+    width: 40%;
+}
+#about .kotak2 {
+    width: 60%;
+}
+#about .kotak2 img {
+    width: 100%;
+}
+
+/* Best Seller */
+
+#bestSeller {
+    background-color: var(--bg1);
+}
+
+#bestSeller h1 {
+    text-align: center;
+    /* padding-top: 20px;
+    padding-bottom: 30px; 
+    padding: a ka b ki; */
+    padding: 20px 0 30px 0;
+}
+
+#bestSeller .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 30px;
+    row-gap: 15px;
+}
+
+#bestSeller .container .card {
+    width: 200px;
+    height: 390px;
+    background-color: var(--cardbook);
+    padding: 15px 30px 5px 30px;
+    border-radius: 10px;
+}
+#bestSeller .container .card .image {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+#bestSeller .container .card .detail {
+    height: 40%;
+}
+
+#bestSeller .container .card .image img {
+    width: 150px;
+}
+
+#bestSeller .container .card .detail .judul {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#bestSeller .container .card .detail .harga {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    border-top: 2px solid var(--colorcardborder);
+    padding-top: 5px;
+}
+#bestSeller .container .card .detail .buy {
+    background-color: var(--buttonbg);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#contact {
+    background-color: var(--bg2);
+}
+
+#contact h1 {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+#contact .contact-content {
+    background-color: #b0d1e2;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#contact .contact-content input,
+#contact .contact-content textarea {
+    padding: 10px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 12px;
+}
+
+#contact .contact-content label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#contact .contact-content input:focus,
+#contact .contact-content textarea:focus {
+    outline: .5px solid rgb(225, 124, 183);
+}
+
+#contact .contact-content button {
+    border-radius: 50px;
+    margin: auto;
+    width: 100px;
+    border: none;
+    padding: 10px;
+    transition: all .5s ease-in-out;
+}
+
+#contact .contact-content button:hover {
+    background-color: skyblue;
+    border: .5px solid rgb(225, 124, 183);
+    cursor: pointer;
+}
+
+#footer {
+    background-color: var(--bg1);
+    padding: 20px 0;
+}
+
+#footer .kontak {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#footer .kontak .kontak1 p {
+    margin-top: 10px;
+}
+
+#footer .kontak .kontak2 a {
+    border: 1px solid #000;
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    transition: all .5s ease-in-out;
+}
+
+#footer .kontak .kontak2 a:hover {
+  background-color: var(--bgnav);
+  color: #000;
+}
+
+
+#footer .kontak .kontak2 h3{
+    margin-bottom: 10px;
+}
+
+#footer .copyright {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1.5px solid var(--colorcardborder);
+    padding-top: 15px;
+}
